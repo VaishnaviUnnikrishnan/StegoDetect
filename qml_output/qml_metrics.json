@@ -1,0 +1,77 @@
+{
+  "model_type": "QSVM",
+  "circuit_info": {
+    "model": "QSVM (PegasosQSVC)",
+    "n_qubits": 4,
+    "reps": 2,
+    "feature_map": "ZZFeatureMap",
+    "kernel": "FidelityQuantumKernel",
+    "optimizer": "Pegasos (C=100.0, steps=200)",
+    "ansatz_params": 0,
+    "circuit_depth": 31,
+    "circuit_gates": 52,
+    "feature_map_params": 4,
+    "training_samples": 100,
+    "training_time_s": 131.91,
+    "backend": "AerSimulator (StatevectorSampler)",
+    "pca_variance_retained": 0.6032192707061768,
+    "C": 100.0,
+    "num_steps": 200
+  },
+  "splits": {
+    "train": {
+      "split": "Train",
+      "accuracy": 0.89,
+      "precision": 0.898,
+      "recall": 0.88,
+      "f1_score": 0.8889,
+      "confusion_matrix": [
+        [
+          45,
+          5
+        ],
+        [
+          6,
+          44
+        ]
+      ],
+      "n_samples": 100
+    },
+    "val": {
+      "split": "Val",
+      "accuracy": 0.4945,
+      "precision": 0.7447,
+      "recall": 0.496,
+      "f1_score": 0.5954,
+      "confusion_matrix": [
+        [
+          245,
+          255
+        ],
+        [
+          756,
+          744
+        ]
+      ],
+      "n_samples": 2000
+    },
+    "test": {
+      "split": "Test",
+      "accuracy": 0.503,
+      "precision": 0.7476,
+      "recall": 0.5093,
+      "f1_score": 0.6059,
+      "confusion_matrix": [
+        [
+          242,
+          258
+        ],
+        [
+          736,
+          764
+        ]
+      ],
+      "n_samples": 2000
+    }
+  }
+}

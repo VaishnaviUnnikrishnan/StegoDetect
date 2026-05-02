@@ -1,0 +1,64 @@
+{
+  "model_type": "rf",
+  "feature_count": 48,
+  "train_samples": 2000,
+  "val_samples": 2000,
+  "test_samples": 2000,
+  "training_time_s": 3.83,
+  "splits": {
+    "train": {
+      "split": "Train",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "confusion_matrix": [
+        [
+          500,
+          0
+        ],
+        [
+          0,
+          1500
+        ]
+      ],
+      "n_samples": 2000
+    },
+    "val": {
+      "split": "Val",
+      "accuracy": 0.6945,
+      "precision": 0.8689,
+      "recall": 0.698,
+      "f1_score": 0.7741,
+      "confusion_matrix": [
+        [
+          342,
+          158
+        ],
+        [
+          453,
+          1047
+        ]
+      ],
+      "n_samples": 2000
+    },
+    "test": {
+      "split": "Test",
+      "accuracy": 0.8555,
+      "precision": 0.9385,
+      "recall": 0.864,
+      "f1_score": 0.8997,
+      "confusion_matrix": [
+        [
+          415,
+          85
+        ],
+        [
+          204,
+          1296
+        ]
+      ],
+      "n_samples": 2000
+    }
+  }
+}
